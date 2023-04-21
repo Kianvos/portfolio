@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Homepage from "./assets/components/Homepage/homepage";
+import Header from "./assets/components/Homepage/default/header";
+import {useEffect, useRef, useState} from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const ref = useRef(null);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > ref.current.offsetTop) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
+    return (
+        <div className="App" ref={ref}>
+            <Header isScrolled={isScrolled}/>
+            <Homepage/>
+        </div>
+    );
 }
 
 export default App;

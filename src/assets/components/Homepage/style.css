@@ -1,0 +1,45 @@
+.sections {
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+section {
+    height: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 150px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar .active {
+    font-weight: bold;
+}
+
+#information {
+    background-color: dimgray;
+    padding-top: 80px
+}
+
+#projects {
+    background-color: red;
+}
+
+#experiences {
+    background-color: #61dafb;
+}
