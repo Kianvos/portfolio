@@ -1,7 +1,9 @@
 import './App.css';
 import Homepage from "./assets/components/Homepage/homepage";
-import Header from "./assets/components/Homepage/default/header";
+import Header from "./assets/components/default/header";
 import {useEffect, useRef, useState} from "react";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import CV from "./assets/components/CV/cv";
 
 
 function App() {
@@ -27,10 +29,17 @@ function App() {
 
 
     return (
-        <div className="App" ref={ref}>
-            <Header isScrolled={isScrolled}/>
-            <Homepage/>
-        </div>
+        <Router>
+            <div className="App" ref={ref}>
+                <Header isScrolled={isScrolled}/>
+                <Routes>
+                    <Route path="/" element={<Homepage/>}/>
+                    <Route path="/CV" element={<CV/>}/>
+                    <Route path="*" element={<p>404, pagina bestaat niet.</p>}/>
+                </Routes>
+            </div>
+        </Router>
+
     );
 }
 
