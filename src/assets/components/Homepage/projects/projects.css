@@ -1,0 +1,40 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkslategray;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: 22%;
+    height: 400px;
+    background-color: gray;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+    .project{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+

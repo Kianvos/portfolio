@@ -2,13 +2,13 @@ import React from "react";
 import {FaCss3, FaHtml5, FaJava, FaPhp, FaPython, FaReact} from "react-icons/fa";
 import {TbBrandGolang} from "react-icons/tb";
 import {Rating} from "@mui/material";
-
+import './experiences.css';
 const Projects = () => {
     return (
         <div className="sections" id="experiences">
             <h1>Ervaringen</h1>
             <h2 style={{color: "darkgray"}}>Deze ervaringen zijn opgedaan tijdens schoolopdrachten, stageopdrachten en
-                thuisprojecten</h2>
+                thuisprojecten.</h2>
             <div className={"container-experiences"}>
                 <div className={"row frontend"}>
                     <div className="experience">

@@ -1,0 +1,81 @@
+#experiences {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkolivegreen;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    background-color: #006600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 10em;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    display: none;
+}
+
+.experience:hover{
+    transform: rotateX(10deg) rotateY(20deg);
+}
+
+.experience-active{
+    display: block;
+    animation: fadeIn ease-in-out 0.3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.container-experiences {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.frontend {
+    justify-content: space-evenly;
+}
+
+.backend {
+    justify-content: space-between;
+}
+
+.icon{
+    font-size: 5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .experience {
+        margin-top: 5px;
+    }
+
+    .container-experiences {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-experiences{
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .experience {
+        margin: 5px auto;
+    }
+}

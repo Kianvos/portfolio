@@ -1,16 +1,25 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import Information from "./information";
-import Projects from "./projects";
-import Experiences from "./experiences";
+import Projects from "./projects/projects";
+import Experiences from "./experiences/experiences";
 
 import {Element, Link} from "react-scroll";
 import './style.css';
 
 const Homepage = () => {
     const ref = useRef(null);
+    const [isExperience, setExperience] = useState(false);
+
 
     //TODO iets leuks mee doen.
     const handleSetActive = (to) =>{
+        if (to === "experiences" && isExperience === false){
+            const elements = document.getElementsByClassName("experience");
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].classList.add("experience-active");
+            }
+            setExperience(true);
+        }
     };
 
     return (
