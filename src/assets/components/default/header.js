@@ -4,8 +4,8 @@ import {FaHome, FaGithub, FaLinkedin} from "react-icons/fa";
 
 import './default.css';
 
-function Header({isScrolled}) {
-    const navBarClass = isScrolled ? "navbar scrolled" : "navbar";
+function Header({isFullPageScrolled}) {
+    const navBarClass = isFullPageScrolled ? "navbar scrolled" : "navbar";
     return (
         <div className={navBarClass}>
             <nav>
@@ -29,6 +29,9 @@ function Header({isScrolled}) {
                     <div className="right-container">
                         <li className="right">
                             <NavLink className="right-li" to={"/CV"}>CV</NavLink>
+                        </li>
+                        <li className="right">
+                            <NavLink className="right-li contact" to={"/CV"}>Contact</NavLink>
                         </li>
                         <li className="right">
                             <a href="https://www.github.com/kianvos" target="_blank" rel="noreferrer">

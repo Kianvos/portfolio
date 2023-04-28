@@ -8,15 +8,21 @@ import CV from "./assets/components/CV/cv";
 
 function App() {
     const ref = useRef(null);
+    const [isFullPageScrolled, setFullPageScrolled] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
-            if (currentScrollPos > ref.current.offsetTop) {
+            if (currentScrollPos > ref.current.offsetTop){
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
+            }
+            if (currentScrollPos > ref.current.offsetTop + window.innerHeight-80) {
+                setFullPageScrolled(true);
+            } else {
+                setFullPageScrolled(false);
             }
         };
 
@@ -31,9 +37,9 @@ function App() {
     return (
         <Router>
             <div className="App" ref={ref}>
-                <Header isScrolled={isScrolled}/>
+                <Header isFullPageScrolled={isFullPageScrolled}/>
                 <Routes>
-                    <Route path="/" element={<Homepage/>}/>
+                    <Route path="/" element={<Homepage isFullPageScrolled={isFullPageScrolled} isScrolled={isScrolled}/>}/>
                     <Route path="/CV" element={<CV/>}/>
                     <Route path="*" element={<p>404, pagina bestaat niet.</p>}/>
                 </Routes>

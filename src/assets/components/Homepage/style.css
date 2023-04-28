@@ -4,17 +4,25 @@
     border-bottom: 2px solid black;
 }
 
+
 section {
     height: 100%;
 }
 
 .sidebar {
     position: fixed;
+    z-index: 1;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     width: 150px;
     text-align: center;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.sidebar.scrolled {
+    opacity: 1;
 }
 
 .sidebar ul {
@@ -32,13 +40,12 @@ section {
     font-weight: bold;
 }
 
-#information {
-    background-color: dimgray;
-    padding-top: 80px
-}
+@media only screen and (max-width: 800px) {
+    .sidebar.scrolled {
+        display: none;
+    }
 
-@media only screen and (max-width: 600px) {
-    .sidebar {
+    .sidebar{
         display: none;
     }
 

@@ -1,15 +1,14 @@
 import React, {useRef, useState} from "react";
-import Information from "./information";
+import Information from "./information/information";
 import Projects from "./projects/projects";
 import Experiences from "./experiences/experiences";
 
 import {Element, Link} from "react-scroll";
 import './style.css';
 
-const Homepage = () => {
+const Homepage = ({isFullPageScrolled,isScrolled}) => {
     const ref = useRef(null);
     const [isExperience, setExperience] = useState(false);
-
 
     //TODO iets leuks mee doen.
     const handleSetActive = (to) =>{
@@ -22,9 +21,12 @@ const Homepage = () => {
         }
     };
 
+    const sideBarClass = isFullPageScrolled ? "sidebar scrolled" : "sidebar";
+    const upClass = isScrolled ? "up scrolled" : "up";
+
     return (
         <div ref={ref} id="top">
-            <div className="sidebar">
+            <div className={sideBarClass}>
                 <ul>
                     <li>
                         <Link to="information" spy={true} smooth={true} offset={-80} duration={800} onSetActive={handleSetActive}>
@@ -54,7 +56,7 @@ const Homepage = () => {
                 <Projects/>
             </Element>
 
-            <div style={{position: "fixed", bottom: "20px", right: "20px", cursor: "pointer"}}>
+            <div className={upClass}>
                 <Link to="information" smooth={true}>
                     Naar boven
                 </Link>

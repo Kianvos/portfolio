@@ -3,6 +3,7 @@ import {FaCss3, FaHtml5, FaJava, FaPhp, FaPython, FaReact} from "react-icons/fa"
 import {TbBrandGolang} from "react-icons/tb";
 import {Rating} from "@mui/material";
 import './experiences.css';
+
 const Projects = () => {
     return (
         <div className="sections" id="experiences">
