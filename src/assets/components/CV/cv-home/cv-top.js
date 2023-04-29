@@ -7,7 +7,7 @@ const CvHome = () => {
         <div className="sections" id="cv-top">
             <div className={"center"}>
                 <h1 className={"cv-h1-text"}>Curriculum vitae</h1>
-                <h3 className={"cv-subtext"}>HBO Student Software Engineering</h3>
+                <h3 className={"cv-subtext"}>Student HBO Software Engineering</h3>
             </div>
             <div className={"button-group"}>
                 <Link ignoreCancelEvents to="cv-information" className={"information-button left cv"} spy={true} smooth={true} offset={-80} duration={800}>
