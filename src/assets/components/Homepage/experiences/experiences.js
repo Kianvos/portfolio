@@ -7,9 +7,12 @@ import './experiences.css';
 const Projects = () => {
     return (
         <div className="sections" id="experiences">
-            <h1>Ervaringen</h1>
-            <h2 style={{color: "darkgray"}}>Deze ervaringen zijn opgedaan tijdens schoolopdrachten, stageopdrachten en
-                thuisprojecten.</h2>
+            <div className={"top-text"}>
+                <h1>Ervaringen</h1>
+                <h2 style={{color: "darkgray"}}>Deze ervaringen zijn opgedaan tijdens schoolopdrachten, stageopdrachten
+                    en thuisprojecten.
+                </h2>
+            </div>
             <div className={"container-experiences"}>
                 <div className={"row frontend"}>
                     <div className="experience">

@@ -7,15 +7,16 @@ import {TbApi, TbBrandGolang} from "react-icons/tb";
 
 import './projects.css';
 import othelloAI from '../../../img/AI.png'
-import ferienWohnung from '../../../img/ferienwohnung.png'
+import ferienWohnung from '../../../img/ferienwohnung.jpg'
 import vitality from '../../../img/vitality.png'
 
 const Projects = () => {
     return (
         <div className="sections" id="projects">
-            <h1>Projecten</h1>
-            <h2 style={{color: "darkgray"}}>Aan deze projecten heb ik gewerkt.</h2>
-
+            <div className={"top-text"}>
+                <h1>Projecten</h1>
+                <h2 style={{color: "darkgray"}}>Aan deze projecten heb ik gewerkt.</h2>
+            </div>
             <div className={"projects"}>
                 <div className="project">
                     <div className={"name"}>
@@ -24,8 +25,8 @@ const Projects = () => {
                     <div className={"image-container"}>
                         <img className={"image"} src={othelloAI} alt={"othello-AI"}/>
                     </div>
-                    <div className={"built-with"}>
-                        <div className={"icon-text-stack"}>
+                    <div className={"built-with "}>
+                        <div className={"icon-text-stack relative"}>
                             <FaJava fontSize={32} color={"orange"}/>
                             <p>Java</p>
                         </div>
@@ -100,11 +101,11 @@ const Projects = () => {
                             <p>Python</p>
                         </div>
                         <div className={"icon-text-horizontal"}>
-                            <TbBrandGolang fontSize={32} color={"cyan"}/>
+                            <TbBrandGolang fontSize={40} color={"cyan"}/>
                             <p>Golang</p>
                         </div>
                         <div className={"icon-text-horizontal"}>
-                            <SiPhp fontSize={32} color={"#8993be"}/>
+                            <SiPhp fontSize={40} color={"#8993be"}/>
                             <p>PHP</p>
                         </div>
                     </div>

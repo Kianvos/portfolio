@@ -1,5 +1,5 @@
 .navbar {
-    z-index: 1;
+    z-index: 999;
     position: fixed;
     height: 80px;
     top: 0;
@@ -113,7 +113,7 @@ nav li.right {
 }
 
 @media only screen and (max-width: 500px) {
-    h1 {
+    .navbar h1 {
         font-size: 16px;
     }
 

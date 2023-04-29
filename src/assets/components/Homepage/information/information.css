@@ -6,15 +6,132 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    flex-direction: column;
 }
 
-.name-center{
+.photo {
+    width: 125px;
+    height: auto;
+}
+
+.image-information {
+    border: 1px solid black;
+    width: 125px;
+    height: 125px;
+    border-right: 10px;
+}
+
+.name-center {
     font-size: 5em;
     padding: 0;
     margin: 0;
+    animation: fadein 1s ease-in-out forwards;
 }
 
-.center{
+.center {
     justify-content: center;
     text-align: center;
+}
+
+.small-talk {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
+    color: black;
+    font-size: 1.2em;
+    animation: fadein 1.5s ease-in-out;
+    max-width: 80%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    animation: fadein 1.5s ease-in-out;
+}
+
+.information-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 50px;
+    border-radius: 8px;
+    border: 5px solid darkslategray;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+.information-button.left{
+    background-size: 200% 100% !important;
+    background: linear-gradient(to right, darkslategray 50%, transparent 50%) right;
+    transition: all .5s ease-out;
+}
+
+.information-button.right{
+    background-size: 200% 100% !important;
+    background: linear-gradient(to left, darkslategray 50%, transparent 50%) left;
+    transition: all .5s ease-out;
+}
+
+.information-button.right:hover {
+    background-position: right;
+}
+
+.information-button.left:hover {
+    background-position: left;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.subtext {
+    color: whitesmoke;
+    animation: fadein 1.5s ease-in-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    p{
+        font-size: 16px;
+    }
+
+    .button-group{
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    p {
+        font-size: 13px;
+    }
+
+    .button-group {
+        width: 70%;
+    }
+
+    .information-button {
+        width: 100px;
+        margin: 10px;
+    }
 }
