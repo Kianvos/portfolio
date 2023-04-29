@@ -1,0 +1,119 @@
+#cv-top {
+    background-color: #000228;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cv-color {
+    background-color: #000228;
+}
+
+.cv-color h1 {
+    color: whitesmoke;
+}
+
+.cv-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75px;
+    position: absolute;
+    width: 100%;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.go-up {
+    top: 20px
+}
+
+.go-down {
+    bottom: 20px;
+}
+
+.cv-navigation p {
+    padding: 0;
+    margin: 0;
+}
+
+
+.cv-h1-text {
+    color: whitesmoke;
+    font-size: 5em;
+    padding: 0;
+    margin: 0;
+}
+
+.cv-subtext {
+    color: #CCCCCC;
+}
+
+.information-button.cv {
+    border-color: gray;
+}
+
+.information-button.right.cv {
+    background: linear-gradient(to left, gray 50%, transparent 50%) left;
+}
+
+.information-button.left.cv {
+    background: linear-gradient(to right, gray 50%, transparent 50%) right;
+}
+
+.sidebar-cv {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 150px;
+    text-align: center;
+    transition: opacity 0.5s ease-out;
+    display: none;
+    background-color: whitesmoke;
+    border-right: 6px solid pink;
+    margin-right: 10px;
+}
+
+.sidebar-cv ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-cv li {
+    cursor: pointer;
+    left: 0;
+}
+
+.sidebar-cv .active {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    border-right: 6px solid blueviolet;
+    width: 100%;
+}
+
+.sidebar-cv.scrolled {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 900px) {
+    .sidebar-cv.scrolled {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cv-h1-text {
+        font-size: 3em;
+    }
+
+    .cv-subtext {
+        font-size: 16px;
+    }
+}

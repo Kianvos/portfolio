@@ -48,42 +48,7 @@
     justify-content: space-evenly;
     width: 50%;
     animation: fadein 1.5s ease-in-out;
-}
-
-.information-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 175px;
-    height: 50px;
-    border-radius: 8px;
-    border: 5px solid darkslategray;
-    color: whitesmoke;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-
-
-}
-
-.information-button.left{
-    background-size: 200% 100% !important;
-    background: linear-gradient(to right, darkslategray 50%, transparent 50%) right;
-    transition: all .5s ease-out;
-}
-
-.information-button.right{
-    background-size: 200% 100% !important;
-    background: linear-gradient(to left, darkslategray 50%, transparent 50%) left;
-    transition: all .5s ease-out;
-}
-
-.information-button.right:hover {
-    background-position: right;
-}
-
-.information-button.left:hover {
-    background-position: left;
+    margin-bottom: 20px;
 }
 
 .arrow {

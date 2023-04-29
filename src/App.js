@@ -1,10 +1,9 @@
 import './App.css';
 import Homepage from "./assets/components/Homepage/homepage";
-import Header from "./assets/components/default/header";
 import {useEffect, useRef, useState} from "react";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import CV from "./assets/components/CV/cv";
-
+import './assets/components/app.css';
 
 function App() {
     const ref = useRef(null);
@@ -25,7 +24,6 @@ function App() {
                 setFullPageScrolled(false);
             }
         };
-
         window.addEventListener("scroll", handleScroll);
 
         return () => {
@@ -37,7 +35,6 @@ function App() {
     return (
         <Router>
             <div className="App" ref={ref}>
-                <Header isFullPageScrolled={isFullPageScrolled}/>
                 <Routes>
                     <Route path="/" element={<Homepage isFullPageScrolled={isFullPageScrolled} isScrolled={isScrolled}/>}/>
                     <Route path="/CV" element={<CV/>}/>
