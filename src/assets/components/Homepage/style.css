@@ -33,11 +33,11 @@ section {
     width: 150px;
     text-align: center;
     transition: opacity 0.5s ease-out;
-    opacity: 0;
+    display: none;
 }
 
 .sidebar.scrolled {
-    opacity: 1;
+    display: block;
 }
 
 .sidebar ul {
