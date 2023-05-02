@@ -67,7 +67,7 @@ const Homepage = ({isFullPageScrolled, isScrolled}) => {
                 </Element>
 
                 <div className={upClass}>
-                    <Link to="information" smooth={true}>
+                    <Link href={"#information"} to="information" smooth={true}>
                         Naar boven
                     </Link>
                 </div>

@@ -41,7 +41,7 @@ const Information = () => {
             </div>
 
             <div className={"arrow"}>
-                <Link to="experiences" spy={true} smooth={true} offset={-80} duration={800}>
+                <Link href={"#experiences"} to="experiences" spy={true} smooth={true} offset={-80} duration={800}>
                     <TbArrowNarrowDown fontSize={60}/>
                 </Link>
             </div>

@@ -10,7 +10,7 @@ const CvHome = () => {
                 <h3 className={"cv-subtext"}>Student HBO Software Engineering</h3>
             </div>
             <div className={"button-group"}>
-                <Link ignoreCancelEvents to="cv-information" className={"information-button left cv"} spy={true} smooth={true} offset={-80} duration={800}>
+                <Link href={"#cv-information"} ignoreCancelEvents to="cv-information" className={"information-button left cv"} spy={true} smooth={true} offset={-80} duration={800}>
                     Interactief
                 </Link>
                 <a className={"information-button right cv"} href={CvPDF} download={"Kian_Vos_CV"}>
