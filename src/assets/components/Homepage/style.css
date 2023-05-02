@@ -55,6 +55,11 @@ section {
     font-weight: bold;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 800px) {
     .top-text{
         top: 5px;

@@ -28,7 +28,7 @@ function Header({isFullPageScrolled}) {
                     </div>
                     <div className="right-container">
                         <li className="right">
-                            <NavLink className="right-li" to={"/CV#cv-home"}>CV</NavLink>
+                            <NavLink className="right-li" to={"/CV"}>CV</NavLink>
                         </li>
                         <li className="right">
                             <NavLink className="right-li contact" to={"/CV"}>Contact</NavLink>
