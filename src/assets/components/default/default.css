@@ -34,6 +34,10 @@
     margin: 0 auto;
 }
 
+.right a{
+    text-decoration: underline;
+}
+
 nav {
     height: 100%;
 }
