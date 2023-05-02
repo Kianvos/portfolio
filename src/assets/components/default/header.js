@@ -31,7 +31,7 @@ function Header({isFullPageScrolled}) {
                             <NavLink className="right-li" to={"/CV"}>CV</NavLink>
                         </li>
                         <li className="right">
-                            <NavLink className="right-li contact" to={"/CV"}>Contact</NavLink>
+                            <NavLink className="right-li contact" to={"/contact"}>Contact</NavLink>
                         </li>
                         <li className="right">
                             <a href="https://www.github.com/kianvos" target="_blank" rel="noreferrer">

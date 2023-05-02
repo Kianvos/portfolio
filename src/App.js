@@ -1,11 +1,15 @@
 import './App.css';
-import Homepage from "./assets/components/Homepage/homepage";
 import {useEffect, useRef, useState} from "react";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import Homepage from "./assets/components/Homepage/homepage";
 import CV from "./assets/components/CV/cv";
+import Contact from "./assets/components/Contact/contact";
 import './assets/components/app.css';
+// import dotenv from "dotenv";
 
 function App() {
+    // dotenv.config()
+
     const ref = useRef(null);
     const [isFullPageScrolled, setFullPageScrolled] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -38,6 +42,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Homepage isFullPageScrolled={isFullPageScrolled} isScrolled={isScrolled}/>}/>
                     <Route path="/CV" element={<CV/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
                     <Route path="*" element={<p>404, pagina bestaat niet.</p>}/>
                 </Routes>
             </div>
