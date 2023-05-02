@@ -6,9 +6,9 @@ import PythonI from "../../../img/python.svg"
 import {TbApi, TbBrandGolang} from "react-icons/tb";
 
 import './projects.css';
-import othelloAI from '../../../img/AI.png'
-import ferienWohnung from '../../../img/ferienwohnung.jpg'
-import vitality from '../../../img/vitality.png'
+import othelloAI from '../../../img/AI.webp'
+import ferienWohnung from '../../../img/ferienwohnung.webp'
+import vitality from '../../../img/vitality.webp'
 
 const Projects = () => {
     return (
