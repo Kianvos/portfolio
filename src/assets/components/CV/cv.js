@@ -63,14 +63,14 @@ const CV = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href={"cv-work-experience"} ignoreCancelEvents to="cv-work-experience" spy={true} smooth={true} offset={-80}
+                        <Link href={"#cv-work-experience"} ignoreCancelEvents to="cv-work-experience" spy={true} smooth={true} offset={-80}
                               duration={800}
                               onSetActive={handleSetActive}>
                             Werkervaring
                         </Link>
                     </li>
                     <li>
-                        <Link href={"cv-education"} ignoreCancelEvents to="cv-education" spy={true} smooth={true} offset={-80} duration={800}
+                        <Link href={"#cv-education"} ignoreCancelEvents to="cv-education" spy={true} smooth={true} offset={-80} duration={800}
                               onSetActive={handleSetActive}>
                             Opleidingen
                         </Link>
