@@ -1,12 +1,29 @@
-#section1{
+#section1 {
     margin-top: 80px;
-    background-color: #61dafb;
+    background-color: #13458c;
 }
 
-#section2{
-    background-color: #383535;
+#section2 {
+    background-color: #13458c;
 }
 
-#section3{
+#section3 {
+    display: flex;
     background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-slider {
+    /*Navbar is 80px and dots are 25px. Also 50px for margin*/
+    height: calc(100vh - 155px);
+}
+
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
 }
