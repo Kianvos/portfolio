@@ -93,15 +93,17 @@
 }
 
 .projects-button {
-    width: 70%;
-    border: 0;
     border-radius: 10px;
-    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #383535;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.7);
+    width: 75%;
+    border: 0;
     color: white;
     cursor: pointer;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.7);
 }
+
 
 @media only screen and (max-width: 1200px) {
     .project {

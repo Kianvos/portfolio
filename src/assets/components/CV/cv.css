@@ -70,12 +70,11 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: auto;
+    width: 125px;
     text-align: center;
     transition: opacity 0.5s ease-out;
     display: none;
-    background-color: whitesmoke;
-    border-right: 6px solid pink;
+    border-right: 6px solid floralwhite;
     margin-right: 10px;
 }
 
@@ -88,7 +87,12 @@
 
 .sidebar-cv li {
     cursor: pointer;
+
     left: 0;
+}
+
+.sidebar-cv li a{
+    color: floralwhite;
 }
 
 .sidebar-cv .active {
@@ -96,8 +100,9 @@
     padding-top: 5px;
     padding-bottom: 5px;
     display: block;
+    text-decoration: underline;
     font-weight: bold;
-    border-right: 6px solid blueviolet;
+    border-right: 6px solid slategray;
     width: 100%;
 }
 

@@ -4,6 +4,8 @@ import {FaJava, FaLaravel, FaReact} from "react-icons/fa";
 import {SiPhp} from "react-icons/si";
 import PythonI from "../../../img/python.svg"
 import {TbApi, TbBrandGolang} from "react-icons/tb";
+import {HashLink} from 'react-router-hash-link';
+
 
 import './projects.css';
 import othelloAI from '../../../img/AI.webp'
@@ -11,6 +13,12 @@ import ferienWohnung from '../../../img/ferienwohnung.webp'
 import vitality from '../../../img/vitality.webp'
 
 const Projects = () => {
+    const scrollWidthOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({top: yCoordinate + yOffset, behavior: 'smooth'});
+    }
+
     return (
         <div className="sections" id="projects">
             <div className={"top-text"}>
@@ -36,7 +44,8 @@ const Projects = () => {
                         <p>Groepsproject</p>
                     </div>
                     <div className={"button-container"}>
-                        <button className={"projects-button"}>Meer informatie</button>
+                        <HashLink className={"projects-button"} smooth to='/projects#section1' scroll={el => scrollWidthOffset(el)}>Meer
+                            informatie</HashLink>
                     </div>
                 </div>
                 <div className="project">
@@ -65,7 +74,8 @@ const Projects = () => {
                         <p>Groepsproject</p>
                     </div>
                     <div className={"button-container"}>
-                        <button className={"projects-button"}>Meer informatie</button>
+                        <HashLink className={"projects-button"} smooth to='/projects#section2' scroll={el => scrollWidthOffset(el)}>Meer
+                            informatie</HashLink>
                     </div>
                 </div>
                 <div className="project">
@@ -86,7 +96,9 @@ const Projects = () => {
                         <p>Solo-project</p>
                     </div>
                     <div className={"button-container"}>
-                        <button className={"projects-button"}>Meer informatie</button>
+                        <HashLink className={"projects-button"} smooth to='/projects#section3'
+                                  scroll={el => scrollWidthOffset(el)}>Meer
+                            informatie</HashLink>
                     </div>
                 </div>
                 <div className="project">
@@ -97,7 +109,6 @@ const Projects = () => {
                     <div className={"more-projects"}>
                         <div className={"icon-text-horizontal"}>
                             <img src={PythonI} alt={"python"}/>
-                            {/*<PythonI/>*/}
                             <p>Python</p>
                         </div>
                         <div className={"icon-text-horizontal"}>
@@ -110,7 +121,9 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className={"button-container"}>
-                        <button className={"projects-button"}>Meer projecten</button>
+                        <HashLink className={"projects-button"} smooth to='/projects#'
+                                  scroll={el => scrollWidthOffset(el)}>Meer
+                            projecten</HashLink>
                     </div>
                 </div>
             </div>
