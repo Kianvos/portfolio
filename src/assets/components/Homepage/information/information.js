@@ -25,7 +25,7 @@ const Information = () => {
             </div>
 
             <div className={"small-talk"}>
-                <p>Ik ben Kian, {age} jaar oud.<br/>Momenteel volg de studie HBO-ICT aan de HanzeHogeschool in
+                <p>Ik ben Kian, {age} jaar oud.<br/>Momenteel volg ik de studie HBO-ICT aan de HanzeHogeschool in
                     Groningen.<br/>Het meeste programmeerwerk doe ik tijdens mijn studie, maar ook vaak genoeg ben ik
                     zelf met leuke projecten bezig.</p>
             </div>
