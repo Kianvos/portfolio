@@ -1,6 +1,6 @@
 import './App.css';
 import {useEffect, useRef, useState} from "react";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import {Route, HashRouter as Router, Routes} from "react-router-dom";
 import Homepage from "./assets/components/Homepage/homepage";
 import CV from "./assets/components/CV/cv";
 import Contact from "./assets/components/Contact/contact";
