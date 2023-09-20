@@ -122,12 +122,21 @@
 
 .centered-content {
     color: whitesmoke;
-    max-width: 70%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.centered-content.languages{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.languages h2{
+    margin-bottom: 40px;
 }
 
 .profile-text {
@@ -153,6 +162,41 @@
     align-items: center;
     justify-content: center;
 }
+
+.skills-left, .skills-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 10px auto;
+}
+
+.skill-label {
+    text-align: left;
+    width: 100px;
+}
+
+.skill-progress {
+    flex: 1;
+    background-color: #282c34;
+    border: 1px solid #888c96;
+    height: 35px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.skill-progress-bar {
+    height: 100%;
+    background-color: #001e00;
+}
+
 @media only screen and (max-width: 1024px) {
     .centered-content{
         width: 60%;
@@ -175,11 +219,24 @@
         font-size: 16px;
     }
 
+    .skill-bar {
+        width: 90%;
+    }
+
     .cv-navigation{
         display: none;
     }
     .centered-content {
         flex-direction: column;
+    }
+
+    .centered-content{
+        width: 80%;
+    }
+
+    .centered-content.languages{
+        align-items: center;
+        justify-content: center;
     }
 
     .profile-text,
