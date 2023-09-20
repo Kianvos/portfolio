@@ -121,7 +121,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className={"button-container"}>
-                        <HashLink className={"projects-button"} smooth to='/projects#'
+                        <HashLink className={"projects-button"} smooth to='/projects'
                                   scroll={el => scrollWidthOffset(el)}>Meer
                             projecten</HashLink>
                     </div>

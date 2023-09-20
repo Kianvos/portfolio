@@ -4,15 +4,21 @@
 }
 
 #section2 {
-    background-color: #13458c;
+    background-color: #4d7aad;
 }
 
 #section3 {
+    background-color: #7ba8cc;
+}
+
+#section4 {
     display: flex;
     background-color: lightblue;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .project-slider {
     /*Navbar is 80px and dots are 25px. Also 50px for margin*/

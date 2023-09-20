@@ -12,7 +12,7 @@ const Ai = () => {
         slidesToScroll: 1,
     };
     return (
-        <div className={"sections"} id='section1'>
+        <div className={"sections"}>
             <Slider {...sliderSettings}>
                 <div className={"project-slider"}>
                     <h1>Othello & TicTacToe AI</h1>
