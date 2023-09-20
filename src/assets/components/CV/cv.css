@@ -11,8 +11,18 @@
     background-color: #000228;
 }
 
-.cv-color h1 {
+.cv-color h1, .cv-section h2 {
     color: whitesmoke;
+}
+
+.cv-section h2{
+    font-size: 32px;
+}
+
+.cv-navigation-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cv-navigation {
@@ -110,10 +120,50 @@
     display: inline-block;
 }
 
+.centered-content {
+    color: whitesmoke;
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.profile-text {
+    flex: 5;
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-img {
+    flex: 2;
+    text-align: center;
+}
+
+.profile-img{
+    background-color: red;
+    height: 210px;
+    width: 140px;
+}
+
+.cv-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+    .centered-content{
+        width: 60%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .sidebar-cv.scrolled {
         display: none;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,4 +178,18 @@
     .cv-navigation{
         display: none;
     }
+    .centered-content {
+        flex-direction: column;
+    }
+
+    .profile-text,
+    .profile-img {
+        flex: auto;
+        padding: 10px;
+    }
+
+    .profile-img {
+        order: -1; /* Image above text on smaller devices */
+    }
+
 }

@@ -71,6 +71,6 @@ section {
 
     .sections {
         overflow: hidden;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #282c34;
     }
 }
