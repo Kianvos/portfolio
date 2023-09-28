@@ -2,7 +2,7 @@
     min-height: calc(100vh - 80px);
     overflow: hidden;
     position: relative;
-    border-bottom: 2px solid black;
+    /*border-bottom: 2px solid black;*/
 }
 
 

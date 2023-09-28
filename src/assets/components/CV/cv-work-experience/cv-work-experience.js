@@ -1,27 +1,47 @@
 import React from "react";
 import {Link} from "react-scroll";
-import {TbArrowNarrowDown, TbArrowNarrowUp} from "react-icons/tb";
+import {TbArrowNarrowUp} from "react-icons/tb";
+
+import ResatoLogo from '../../../img/CV/Logo_Resato.png'
+
 
 const CvSkills = () => {
     return (
         <div className="sections cv-section cv-color">
-            <Link ignoreCancelEvents href={"#cv-skills"} to="cv-skills" spy={true} smooth={true} offset={-80}
+            <Link ignoreCancelEvents href={"#cv-education"} to="cv-education" spy={true} smooth={true} offset={-80}
                   duration={800} className={"cv-navigation-link"}>
                 <div className={"cv-navigation go-up"}>
                     <TbArrowNarrowUp fontSize={50}/>
-                    <p>Skills</p>
+                    <p>Opleidingen</p>
                 </div>
             </Link>
             <div className="centered-content">
-                <h1>Werkervaring</h1>
-            </div>
-            <Link ignoreCancelEvents href={"#cv-education"} to="cv-education" spy={true} smooth={true} offset={-80}
-                  duration={800} className={"cv-navigation-link"}>
-                <div className={"cv-navigation go-down"}>
-                    <p>Opleidingen</p>
-                    <TbArrowNarrowDown fontSize={50}/>
+                <div className={"experience-block"}>
+                    <div className={"logo"}>
+                        <img src={ResatoLogo} alt={"Logo Resato International"}/>
+                    </div>
+                    <div className={"info"}>
+                        <div className={"top-info"}>
+                            <h3>Stage backend developer</h3>
+                            <p className="dates">feb 2021 - jul 2021</p>
+                        </div>
+                        <p>In de tijd dat ik hier stage gelopen heb, heb ik voornamelijk gewerkt met Golang.</p>
+                    </div>
                 </div>
-            </Link>
+
+                <div className={"experience-block"}>
+                    <div className={"logo"}>
+                        <img src={ResatoLogo} alt={"Logo Resato International"}/>
+                    </div>
+                    <div className={"info"}>
+                        <div className={"top-info"}>
+                            <h3>Stage backend developer</h3>
+                            <p className="dates">sep 2019 - feb 2020</p>
+                        </div>
+                        <p>Tijdens mijn stageperiode bij Resato ben ik vooral bezig geweest met Golang. Hier ben ik bezig geweest aan het bouwen van een API die door een frontend gebruikt kan worden.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

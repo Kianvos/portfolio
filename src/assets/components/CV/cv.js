@@ -15,7 +15,7 @@ const CV = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        if (window.innerWidth > 600){
+        if (window.innerWidth > 600 && window.innerHeight > 600){
             // disable scrolling
             document.body.style.overflow = 'hidden';
         }
@@ -63,16 +63,16 @@ const CV = () => {
                         </Link>
                     </li>
                     <li>
+                        <Link href={"#cv-education"} ignoreCancelEvents to="cv-education" spy={true} smooth={true} offset={-80} duration={800}
+                              onSetActive={handleSetActive}>
+                            Opleidingen
+                        </Link>
+                    </li>
+                    <li>
                         <Link href={"#cv-work-experience"} ignoreCancelEvents to="cv-work-experience" spy={true} smooth={true} offset={-80}
                               duration={800}
                               onSetActive={handleSetActive}>
                             Werkervaring
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={"#cv-education"} ignoreCancelEvents to="cv-education" spy={true} smooth={true} offset={-80} duration={800}
-                              onSetActive={handleSetActive}>
-                            Opleidingen
                         </Link>
                     </li>
                 </ul>
@@ -87,11 +87,11 @@ const CV = () => {
             <Element name={"cv-skills"} id={"cv-skills"}>
                 <CvSkills/>
             </Element>
-            <Element name={"cv-work-experience"} id={"cv-work-experience"}>
-                <CvWorkExperience/>
-            </Element>
             <Element name={"cv-education"} id={"cv-education"}>
                 <CvEducation/>
+            </Element>
+            <Element name={"cv-work-experience"} id={"cv-work-experience"}>
+                <CvWorkExperience/>
             </Element>
         </div>
     );

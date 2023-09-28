@@ -63,10 +63,10 @@ const CvSkills = () => {
                     </div>
                 </div>
             </div>
-            <Link ignoreCancelEvents href={"#cv-work-experience"} to="cv-work-experience" spy={true} smooth={true} offset={-80}
+            <Link ignoreCancelEvents href={"#cv-education"} to="cv-education" spy={true} smooth={true} offset={-80}
                   duration={800} className={"cv-navigation-link"}>
                 <div className={"cv-navigation go-down"}>
-                    <p>Werkervaring</p>
+                    <p>Opleidingen</p>
                     <TbArrowNarrowDown fontSize={50}/>
                 </div>
             </Link>
