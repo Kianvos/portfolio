@@ -18,8 +18,6 @@
     justify-content: center;
 }
 
-
-
 .project-slider {
     /*Navbar is 80px and dots are 25px. Also 50px for margin*/
     height: calc(100vh - 155px);
@@ -29,7 +27,87 @@
     left: 3% !important;
     z-index: 1;
 }
+
+.project-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-name{
+    margin-top: -40px;
+}
+
+.project-container{
+    width: 70vw;
+    min-height: 70vh;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid dimgray;
+}
+
+.project-container#ai{
+    background-color: #4d7aad;
+}
+
+.project-container#vitality{
+    background-color: #7ba8cc;
+}
+
+.project-container#house-austria{
+    background-color: lightblue;
+}
+
+.project-right{
+    width: 40%;
+}
+
+.project-left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
 .slick-next {
     right: 3% !important;
     z-index: 1;
+}
+
+.bottom-text{
+    font-size: 20px;
+}
+
+.carousel-root{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .control-next.control-arrow:before{
+    border-left: 15px solid black;
+}
+
+.carousel .control-prev.control-arrow:before{
+    border-right: 15px solid black;
+}
+
+@media only screen and (max-width: 1400px) {
+    .project-image{
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .project-image{
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .project-image{
+        max-width: 50%;
+    }
 }

@@ -6,6 +6,9 @@ import CV from "./assets/components/CV/cv";
 import Contact from "./assets/components/Contact/contact";
 import './assets/components/app.css';
 import Projects from "./assets/components/Projects/projects";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 // import dotenv from "dotenv";
 
 function App() {
@@ -23,7 +26,7 @@ function App() {
             } else {
                 setIsScrolled(false);
             }
-            if (currentScrollPos > ref.current.offsetTop + window.innerHeight-80) {
+            if (currentScrollPos >= ref.current.offsetTop + window.innerHeight-80) {
                 setFullPageScrolled(true);
             } else {
                 setFullPageScrolled(false);
