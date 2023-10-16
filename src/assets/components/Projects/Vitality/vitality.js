@@ -12,7 +12,7 @@ const Vitality = () => {
                 <div className={"project-left"}>
                     <Carousel dynamicHeight={false} width={'55%'} infiniteLoop={true} showThumbs={false}>
                         <div className={"carousel-item"}>
-                            <video style={{ width: '50%'}} controls>
+                            <video className={"video-vitality"} controls>
                                 <source src={Homescreen} type="video/mp4"/>
                             </video>
                             <p className={"bottom-text"}>Homescreen App</p>
@@ -21,9 +21,10 @@ const Vitality = () => {
                 </div>
                 <div className={"project-right"}>
                     <ul>
-                        <li>Minimax</li>
-                        <li>Alpha-Beta Pruning</li>
-                        <li>Transposition Tables</li>
+                        <li>Vitaliteit meten</li>
+                        <li>Todo's bijhouden</li>
+                        <li>Bekijken hoe het met vrienden gaat.</li>
+                        <li>Samen sporten</li>
                     </ul>
                     <div className={"built-with "}>
                         <div className={"icon-text-stack relative"}>

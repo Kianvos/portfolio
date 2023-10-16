@@ -48,6 +48,10 @@
     border: 1px solid dimgray;
 }
 
+.video-vitality{
+    width: 50%;
+}
+
 .project-container#ai{
     background-color: #4d7aad;
 }
@@ -105,11 +109,29 @@
     text-align: center;
 }
 
-.link-to-button{
+.link-to-page{
     border-radius: 15px;
     padding: 15px;
     background-color: green;
     color: whitesmoke;
+}
+
+.link-to-github{
+    border-radius: 15px;
+    padding: 15px;
+    background-color: orange;
+    color: whitesmoke;
+}
+
+.bottom-two-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.bottom-one-button{
+    display: flex;
+    justify-content: center;
 }
 
 .icon-text-stack{
@@ -133,5 +155,45 @@
 @media only screen and (max-width: 800px) {
     .project-image{
         max-width: 50%;
+    }
+
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .project-left, .project-right{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .carousel-root{
+        margin-top: 20px;
+    }
+
+    .video-vitality{
+        width: 80%;
+    }
+
+    .project-name{
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .bottom-two-buttons{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bottom-one-button, .bottom-two-buttons{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 528px) {
+    .project-image{
+        position: relative;
+        max-width: 40%;
     }
 }

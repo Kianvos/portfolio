@@ -45,7 +45,10 @@ const HouseAustria = () => {
                             <p className={"icon-text"}>React</p>
                         </div>
                     </div>
-                    <a className={"link-to-button"} href={"https://ferienwohnung.kianvos.nl"}>Link naar pagina</a>
+                    <div className={"bottom-two-buttons"}>
+                        <a className={"link-to-github"} href={"https://github.com/Kianvos/austria-ferienwohnung"}>Link naar github</a>
+                        <a className={"link-to-page"} href={"https://ferienwohnung.kianvos.nl"}>Link naar pagina</a>
+                    </div>
                 </div>
             </div>
         </div>

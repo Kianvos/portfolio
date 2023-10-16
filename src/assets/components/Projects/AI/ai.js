@@ -36,7 +36,11 @@ const Ai = () => {
                             <p className={"icon-text"}>Java</p>
                         </div>
                     </div>
+                    <div className={"bottom-one-button"}>
+                        <a className={"link-to-github"} href={"https://github.com/Kianvos/Inteligente_Systemen"}>Link naar github</a>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
