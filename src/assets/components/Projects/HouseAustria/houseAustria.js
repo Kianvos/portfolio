@@ -5,6 +5,8 @@ import Apartments from '../../../img/Projects/apartments.png'
 import Winter from '../../../img/Projects/winter.png'
 import Summer from '../../../img/Projects/summer.png'
 
+import {FaReact} from "react-icons/fa";
+
 
 const HouseAustria = () => {
     return (
@@ -33,14 +35,17 @@ const HouseAustria = () => {
                 </div>
                 <div className={"project-right"}>
                     <ul>
-                        <li>Minimax</li>
-                        <li>Alpha-Beta Pruning</li>
-                        <li>Transposition Tables</li>
+                        <li>Appartementen</li>
+                        <li>Meerdere talen</li>
+                        <li>Zomer/ winterpagina</li>
                     </ul>
-                    <ul>
-                        <li>Java</li>
-                    </ul>
-                    <a href={"https://ferienwohnung.kianvos.nl"}>Link naar pagina</a>
+                    <div className={"built-with "}>
+                        <div className={"icon-text-stack relative"}>
+                            <FaReact fontSize={40} color={"green"}/>
+                            <p className={"icon-text"}>React</p>
+                        </div>
+                    </div>
+                    <a className={"link-to-button"} href={"https://ferienwohnung.kianvos.nl"}>Link naar pagina</a>
                 </div>
             </div>
         </div>

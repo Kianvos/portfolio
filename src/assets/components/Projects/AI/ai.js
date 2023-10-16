@@ -1,6 +1,7 @@
 import React from "react";
 // import Slider from "react-slick";
 import { Carousel } from 'react-responsive-carousel';
+import {FaJava} from "react-icons/fa";
 
 import TicTacToe from '../../../img/Projects/tic-tac-toe.png'
 import Othello from '../../../img/Projects/othello.png'
@@ -29,9 +30,12 @@ const Ai = () => {
                         <li>Alpha-Beta Pruning</li>
                         <li>Transposition Tables</li>
                     </ul>
-                    <ul>
-                        <li>Java</li>
-                    </ul>
+                    <div className={"built-with "}>
+                        <div className={"icon-text-stack relative"}>
+                            <FaJava fontSize={40} color={"orange"}/>
+                            <p className={"icon-text"}>Java</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

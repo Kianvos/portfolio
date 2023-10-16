@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 
 import Homescreen from '../../../media/Homescreen.mp4'
+import {FaLaravel, FaReact} from "react-icons/fa";
 
 const Vitality = () => {
     return (
@@ -24,10 +25,16 @@ const Vitality = () => {
                         <li>Alpha-Beta Pruning</li>
                         <li>Transposition Tables</li>
                     </ul>
-                    <ul>
-                        <li>React Native</li>
-                        <li>Laravel</li>
-                    </ul>
+                    <div className={"built-with "}>
+                        <div className={"icon-text-stack relative"}>
+                            <FaReact fontSize={40} color={"orange"}/>
+                            <p className={"icon-text"}>React Native</p>
+                        </div>
+                        <div className={"icon-text-stack relative"}>
+                            <FaLaravel fontSize={40} color={"red"}/>
+                            <p className={"icon-text"}>Laravel</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
